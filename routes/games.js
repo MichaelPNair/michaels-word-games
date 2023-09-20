@@ -4,7 +4,7 @@ const AppError = require('../lib/app_error')
 const axios = require('axios')
 
 router.get('/:id', async (req, res, next) => {
-    axios.get(`https://api.rawg.io/api/games/${req.params.id}?key=ef0d07425fea44dc864de7b8d7534452`)
+    axios.get(`https://api.rawg.io/api/games/${req.params.id}?key=${process.env.RAWG_KEY}`)
         .then(game => res.json(game.data))
         .catch(next)
 

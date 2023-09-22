@@ -7,6 +7,7 @@ This is a single page application done in HTML, CSS and Javascript with React an
 * HTML, CSS, JavaScript, Express, React, axios
 * RAWG API
 * MangaDex API
+* Dotenv
 * Git
 
 ## Features

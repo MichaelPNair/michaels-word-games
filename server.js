@@ -3,6 +3,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const path = require('path')
+const cors = require('cors')
 const usersRouter = require('./routes/users')
 const gameCountsRouter = require('./routes/gameCounts')
 const gamesRouter = require('./routes/games')
@@ -16,6 +17,7 @@ const ensureLoggedIn = require('./middlewares/ensure_logged_in')
 const port = process.env.PORT || 8080
 
 app.use(express.json())
+app.use(cors())
 // app.use(checkToken)
 
 // app.use('/api/gameCount', ensureLoggedIn, gameCountsRouter)

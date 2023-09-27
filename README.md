@@ -116,6 +116,7 @@ There is no limit on the number of guesses you can try.
 
 ## Future Improvements
 
+* Fix error where mangadex images don't display properly
 * Improve style of webpage
 * Move Wordle answers and color validation to a server to prevent it being visible in browser dev tools
 * Make games more colour blind friendly (eg. patterns instead of colours to indicate match)

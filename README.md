@@ -2,6 +2,10 @@
 
 This is a single page application done in HTML, CSS and Javascript with React and express. This utilizes the MangaDex API and RAWG API to let users play various games that fetch data from MangaDex such as manga titles, authors, artists and cover art or data from RAWG such as game title, release date, platforms and art.
 
+## Links
+
+The website is hosted on render [here](https://michaels-word-games.onrender.com/).
+
 ## Technologies used
 
 * HTML, CSS, JavaScript, Express, React, axios

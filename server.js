@@ -8,6 +8,7 @@ const usersRouter = require('./routes/users')
 const gameCountsRouter = require('./routes/gameCounts')
 const gamesRouter = require('./routes/games')
 const mangaRouter = require('./routes/manga')
+const moviesRouter = require('./routes/movies')
 const errorHandler = require('./middlewares/error_handler')
 const checkToken = require('./middlewares/check_token')
 const ensureLoggedIn = require('./middlewares/ensure_logged_in')
@@ -25,6 +26,7 @@ app.use(cors())
 
 app.use('/api/manga', mangaRouter)
 app.use('/api/games', gamesRouter)
+app.use('/api/movies', moviesRouter)
 
 app.use(express.static(path.join(__dirname, 'build')));
 
